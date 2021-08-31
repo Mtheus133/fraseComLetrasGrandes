@@ -1,0 +1,427 @@
+public static void main(String[] args) {
+                    Scanner in = new Scanner(System.in);
+		        
+		        String frase = umaFrase();
+		        int caracteresLinha = 0;
+		        int limitadorDeCaracteres =80;   
+		        String [] resultado = new String [9];
+		        
+		         for(int i =0; i< resultado.length; i++) resultado[i]="";
+		         
+		         for(int indice = 0; indice < frase.length(); indice++){
+		             char caractere = frase.charAt(indice);
+		             
+                             if(caractere=='l') caracteresLinha += funcaoL(resultado, true);
+                             if(caractere=='m') caracteresLinha += funcaoM(resultado, true);
+                             if(caractere=='a') caracteresLinha += funcaoA(resultado, true);            
+                             if(caractere=='t') caracteresLinha += funcaoT(resultado, true);            
+                             if(caractere=='h') caracteresLinha += funcaoH(resultado, true);           
+                             if(caractere=='e') caracteresLinha += funcaoE(resultado, true);            
+                             if(caractere=='u') caracteresLinha += funcaoU(resultado, true);           
+                             if(caractere=='s') caracteresLinha += funcaoS(resultado, true);          
+                             if(caractere=='g') caracteresLinha += funcaoG(resultado, true);          
+                             if(caractere=='i') caracteresLinha += funcaoI(resultado, true);                 
+                             if(caractere=='p') caracteresLinha += funcaoP(resultado, true);           
+                             if(caractere=='r') caracteresLinha += funcaoR(resultado, true);        
+                             if(caractere=='o') caracteresLinha += funcaoO(resultado, true);          
+                             if(caractere=='c') caracteresLinha += funcaoC(resultado, true);
+                             if(caractere=='d') caracteresLinha += funcaoD(resultado, true);
+                             if(caractere=='v') caracteresLinha += funcaoV(resultado, true);
+                             if(caractere=='n') caracteresLinha += funcaoN(resultado, true);
+                             if(caractere=='y') caracteresLinha += funcaoY(resultado, true);
+                             if(caractere=='f') caracteresLinha += funcaoF(resultado, true);
+                             if(caractere=='b') caracteresLinha += funcaoB(resultado, true);
+                             if(caractere=='k') caracteresLinha += funcaoK(resultado, true);
+                             if(caractere=='j') caracteresLinha += funcaoJ(resultado, true);
+                             if(caractere=='x') caracteresLinha += funcaoX(resultado, true);
+                             if(caractere=='¨') caracteresLinha += funcaos2(resultado, true);
+		             if(caractere==' ') caracteresLinha += funcaoEspaco(resultado, true);
+
+                             if(caracteresLinha >= limitadorDeCaracteres){
+		                    
+                                 for(int i = 0; i < resultado.length; i++) System.out.println(resultado[i]);
+		                 for(int i = 0; i < resultado.length; i++) resultado[i] = "";
+		                 caracteresLinha=0;
+		             
+                                }
+                             if(caractere=='l') caracteresLinha += funcaoL(resultado, false);
+                             if(caractere=='m') caracteresLinha += funcaoM(resultado, false);
+                             if(caractere=='a') caracteresLinha += funcaoA(resultado, false);            
+                             if(caractere=='t') caracteresLinha += funcaoT(resultado, false);            
+                             if(caractere=='h') caracteresLinha += funcaoH(resultado, false);           
+                             if(caractere=='e') caracteresLinha += funcaoE(resultado, false);            
+                             if(caractere=='u') caracteresLinha += funcaoU(resultado, false);           
+                             if(caractere=='s') caracteresLinha += funcaoS(resultado, false);          
+                             if(caractere=='g') caracteresLinha += funcaoG(resultado, false);          
+                             if(caractere=='i') caracteresLinha += funcaoI(resultado, false);                 
+                             if(caractere=='p') caracteresLinha += funcaoP(resultado, false);           
+                             if(caractere=='r') caracteresLinha += funcaoR(resultado, false);        
+                             if(caractere=='o') caracteresLinha += funcaoO(resultado, false);          
+                             if(caractere=='c') caracteresLinha += funcaoC(resultado, false);
+                             if(caractere=='d') caracteresLinha += funcaoD(resultado, false);
+                             if(caractere=='v') caracteresLinha += funcaoV(resultado, false);
+                             if(caractere=='n') caracteresLinha += funcaoN(resultado, false);
+                             if(caractere=='y') caracteresLinha += funcaoY(resultado, false);
+                             if(caractere=='f') caracteresLinha += funcaoF(resultado, false);
+                             if(caractere=='b') caracteresLinha += funcaoB(resultado, false);
+                             if(caractere=='k') caracteresLinha += funcaoK(resultado, false);
+                             if(caractere=='j') caracteresLinha += funcaoJ(resultado, false);
+                             if(caractere=='x') caracteresLinha += funcaoX(resultado, false);
+                             if(caractere=='¨') caracteresLinha += funcaos2(resultado, false);
+		             if(caractere==' ') caracteresLinha += funcaoEspaco(resultado, false);
+                            
+		        }
+		        for(int i=0; i<resultado.length; i++) System.out.println(resultado[i]);    
+		        
+		}
+
+		 public static String umaFrase(){
+		        Scanner in = new Scanner (System.in);
+		        System.out.println("digite seu nome");
+		        String frase = in.nextLine();
+		        return frase;
+		    }
+		 
+                 
+                 
+                 
+                 
+                public static int funcaos2(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OO          OO").length();
+                        }
+                        vet [0] = vet[0] + "  "+"   OOO   OOO  ";
+                        vet [1] = vet[1] + "  "+"  OOOOO OOOOO ";
+                        vet [2] = vet[2] + "  "+"  OOOOOOOOOOO ";
+                        vet [3] = vet[3] + "  "+"   OOOOOOOOO  ";
+                        vet [4] = vet[4] + "  "+"    OOOOOOO   ";
+                        vet [5] = vet[5] + "  "+"     OOOOO    ";
+                        vet [6] = vet[6] + "  "+"       O      ";  
+                return 0;        
+                } 
+		public static int funcaoM(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OO          OO").length();
+                        }
+                        vet [0] = vet[0] + "  "+"OO          OO";
+                        vet [1] = vet[1] + "  "+"OOO        OOO";
+                        vet [2] = vet[2] + "  "+"OO OO    OO OO";
+                        vet [3] = vet[3] + "  "+"OO  OOOOOO  OO";
+                        vet [4] = vet[4] + "  "+"OO   OOOO   OO";
+                        vet [5] = vet[5] + "  "+"OO    OO    OO";
+                        vet [6] = vet[6] + "  "+"OO    OO    OO";
+                return 0;        
+		}
+                public static int funcaoV(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OO          OO").length();
+                        }
+                        vet [0] = vet[0] + "  "+"OO          OO";
+                        vet [1] = vet[1] + "  "+" OO        OO ";
+                        vet [2] = vet[2] + "  "+"  OO      OO  ";
+                        vet [3] = vet[3] + "  "+"    OO   OO   ";
+                        vet [4] = vet[4] + "  "+"     OO OO    ";
+                        vet [5] = vet[5] + "  "+"      OOO     ";
+                        vet [6] = vet[6] + "  "+"       O      ";  
+                return 0;        
+      }
+                public static int funcaoY(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OO          OO").length();
+                        }
+                        vet [0] = vet[0] + "  "+"OO          OO";
+                        vet [1] = vet[1] + "  "+" OO        OO ";
+                        vet [2] = vet[2] + "  "+"  OO      OO  ";
+                        vet [3] = vet[3] + "  "+"    OOOOOO    ";
+                        vet [4] = vet[4] + "  "+"     OOOO     ";
+                        vet [5] = vet[5] + "  "+"      OO      ";
+                        vet [6] = vet[6] + "  "+"      OO      ";
+                return 0;        
+      }      
+                public static int funcaoF(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+                        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+                        vet [1] = vet[1] + "  "+"OOOOOOOOOOOOOO";
+                        vet [2] = vet[2] + "  "+"OOO           ";
+                        vet [3] = vet[3] + "  "+"OOOOOOOOOO    "; 
+                        vet [4] = vet[4] + "  "+"OOOOOOOOOO    ";
+                        vet [5] = vet[5] + "  "+"OOO           ";
+                        vet [6] = vet[6] + "  "+"OOO           ";
+                return 0;        
+      }
+                public static int funcaoB(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOO           ").length();
+                        }
+                        vet [0] = vet[0] + "  "+"OOO           ";
+                        vet [1] = vet[1] + "  "+"OOO           ";
+                        vet [2] = vet[2] + "  "+"OOOOOOOOOOOOOO";
+                        vet [3] = vet[3] + "  "+"OOO       OOOO"; 
+                        vet [4] = vet[4] + "  "+"OOO         OO";
+                        vet [5] = vet[5] + "  "+"OOO       OOOO";
+                        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOO ";
+                return 0;        
+                }
+                public static int funcaoJ(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+                        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+                        vet [1] = vet[1] + "  "+"      OO      ";
+                        vet [2] = vet[2] + "  "+"      OO      ";
+                        vet [3] = vet[3] + "  "+"OO    OO      "; 
+                        vet [4] = vet[4] + "  "+"OO    OO      ";
+                        vet [5] = vet[5] + "  "+"OOOOOOOO      ";
+                        vet [6] = vet[6] + "  "+"OOOOOOOO      ";
+                return 0;        
+      }
+                public static int funcaoK(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OO        OOO ").length();
+                        }
+                        vet [0] = vet[0] + "  "+"OO        OOO ";
+                        vet [1] = vet[1] + "  "+"OO      OOO   ";
+                        vet [2] = vet[2] + "  "+"OO    OOO     ";
+                        vet [3] = vet[3] + "  "+"OOOOOO        "; 
+                        vet [4] = vet[4] + "  "+"OO    OOO     ";
+                        vet [5] = vet[5] + "  "+"OO      OOO   ";
+                        vet [6] = vet[6] + "  "+"OO        OOO ";
+                return 0;        
+     }
+                
+		public static int funcaoA(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "     OOOOO    ").length();
+                        }
+		        vet [0] = vet[0] + "  "+"     OOOOO    ";
+		        vet [1] = vet[1] + "  "+"    OO   OO   ";
+		        vet [2] = vet[2] + "  "+"  OO      OO  ";
+		        vet [3] = vet[3] + "  "+" OOOOOOOOOOOO ";
+		        vet [4] = vet[4] + "  "+"OOOOOOOOOOOOOO";
+		        vet [5] = vet[5] + "  "+"OOOO      OOOO";
+		        vet [6] = vet[6] + "  "+"OOO        OOO";
+                return 0;        
+		}
+
+		public static int funcaoT(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"     OOO      ";
+		        vet [2] = vet[2] + "  "+"     OOO      ";
+		        vet [3] = vet[3] + "  "+"     OOO      ";
+		        vet [4] = vet[4] + "  "+"     OOO      ";
+		        vet [5] = vet[5] + "  "+"     OOO      ";
+		        vet [6] = vet[6] + "  "+"     OOO      ";
+                return 0;        
+		}
+
+		public static int funcaoH(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOO        OOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOO        OOO";
+		        vet [1] = vet[1] + "  "+"OOO        OOO";   
+		        vet [2] = vet[2] + "  "+"OOO        OOO";
+		        vet [3] = vet[3] + "  "+"OOOOOOOOOOOOOO"; 
+		        vet [4] = vet[4] + "  "+"OOO        OOO";
+		        vet [5] = vet[5] + "  "+"OOO        OOO";
+		        vet [6] = vet[6] + "  "+"OOO        OOO";
+                return 0;        
+		}
+
+		public static int funcaoE(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"OOOOOOOOOOOOOO";
+		        vet [2] = vet[2] + "  "+"OO            ";
+		        vet [3] = vet[3] + "  "+"OOOOOOOOOOOOOO"; 
+		        vet [4] = vet[4] + "  "+"OO            ";
+		        vet [5] = vet[5] + "  "+"OOOOOOOOOOOOOO";
+		        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOOO";
+                return 0;        
+		}
+
+		public static int funcaoU(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OO          OO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OO          OO";
+		        vet [1] = vet[1] + "  "+"OO          OO";
+		        vet [2] = vet[2] + "  "+"OO          OO";
+		        vet [3] = vet[3] + "  "+"OO          OO"; 
+		        vet [4] = vet[4] + "  "+"OO          OO";
+		        vet [5] = vet[5] + "  "+"OOOOOOOOOOOOOO";
+		        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOOO";
+                return 0;        
+		}
+
+		public static int funcaoS(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"OOOO          ";
+		        vet [2] = vet[2] + "  "+"OOOO          ";
+		        vet [3] = vet[3] + "  "+"OOOOOOOOOOOOOO"; 
+		        vet [4] = vet[4] + "  "+"          OOOO";
+		        vet [5] = vet[5] + "  "+"          OOOO";
+		        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOOO";     
+                return 0;            
+		}
+
+		public static int funcaoG(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"OOOOOOOOOOOOOO";
+		        vet [2] = vet[2] + "  "+"OOOO          ";
+		        vet [3] = vet[3] + "  "+"OOOO   OOOOOOO"; 
+		        vet [4] = vet[4] + "  "+"OOOO      OOOO";
+		        vet [5] = vet[5] + "  "+"OOOOOOOOOOOOOO";
+		        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOOO";
+                return 0;        
+		}
+
+		public static int funcaoI(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "     OOO      ").length();
+                        }
+		        vet [0] = vet[0] + "  "+"     OOO      ";
+		        vet [1] = vet[1] + "  "+"     OOO      ";
+		        vet [2] = vet[2] + "  "+"     OOO      ";
+		        vet [3] = vet[3] + "  "+"     OOO      ";
+		        vet [4] = vet[4] + "  "+"     OOO      ";
+		        vet [5] = vet[5] + "  "+"     OOO      ";
+		        vet [6] = vet[6] + "  "+"     OOO      ";
+                return 0;        
+		}
+
+		public static int funcaoR(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"OOO      OOOOO";
+		        vet [2] = vet[2] + "  "+"OOO        OOO";
+		        vet [3] = vet[3] + "  "+"OOOOOOOOOOOOOO";
+		        vet [4] = vet[4] + "  "+"OOOOOOOOOOOOOO";
+		        vet [5] = vet[5] + "  "+"OOO        OOO";
+		        vet [6] = vet[6] + "  "+"OOO        OOO";
+                return 0;        
+		}
+
+		public static int funcaoO(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"OOOOOOOOOOOOOO";
+		        vet [2] = vet[2] + "  "+"OOO        OOO";
+		        vet [3] = vet[3] + "  "+"OO          OO"; 
+		        vet [4] = vet[4] + "  "+"OOO        OOO";
+		        vet [5] = vet[5] + "  "+"OOOOOOOOOOOOOO";
+		        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOOO";
+                return 0;        
+		}
+
+		public static int funcaoD(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"OOO       OOOO";
+		        vet [2] = vet[2] + "  "+"OOO        OOO";
+		        vet [3] = vet[3] + "  "+"OOO         OO"; 
+		        vet [4] = vet[4] + "  "+"OOO        OOO";
+		        vet [5] = vet[5] + "  "+"OOO       OOOO";
+		        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOOO";
+                return 0;        
+		}
+
+		public static int funcaoL(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOO           ").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOO           ";
+		        vet [1] = vet[1] + "  "+"OOO           ";
+		        vet [2] = vet[2] + "  "+"OOO           ";
+		        vet [3] = vet[3] + "  "+"OOO           ";
+		        vet [4] = vet[4] + "  "+"OOO           ";
+		        vet [5] = vet[5] + "  "+"OOO           ";
+		        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOOO";
+                return 0;        
+		}
+
+		public static int funcaoN(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOO         OO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOO         OO";
+		        vet [1] = vet[1] + "  "+"OOOO        OO";
+		        vet [2] = vet[2] + "  "+"OO  OO      OO";
+		        vet [3] = vet[3] + "  "+"OO   OO     OO";
+		        vet [4] = vet[4] + "  "+"OO    OO    OO";
+		        vet [5] = vet[5] + "  "+"OO      OO  OO";
+		        vet [6] = vet[6] + "  "+"OO        OOOO";
+                return 0;        
+		}
+
+		public static int funcaoC(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"OOOOOOOOOOOOOO";
+		        vet [2] = vet[2] + "  "+"OOO           ";
+		        vet [3] = vet[3] + "  "+"OOO           "; 
+		        vet [4] = vet[4] + "  "+"OOO           ";
+		        vet [5] = vet[5] + "  "+"OOOOOOOOOOOOOO";
+		        vet [6] = vet[6] + "  "+"OOOOOOOOOOOOOO";
+                return 0;        
+		}
+
+		public static int funcaoX(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOO        OOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOO        OOO";
+		        vet [1] = vet[1] + "  "+"  OOO    OOO  ";
+		        vet [2] = vet[2] + "  "+"   OOO  OOO   ";
+		        vet [3] = vet[3] + "  "+"    OOOOO     ";
+		        vet [4] = vet[4] + "  "+"   OOO OOO    ";
+		        vet [5] = vet[5] + "  "+"  OOO    OOO  ";
+		        vet [6] = vet[6] + "  "+"OOO        OOO";
+                return 0;        
+		}
+
+		public static int funcaoP(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return ("" + " " + "OOOOOOOOOOOOOO").length();
+                        }
+		        vet [0] = vet[0] + "  "+"OOOOOOOOOOOOOO";
+		        vet [1] = vet[1] + "  "+"OOO        OOO";
+		        vet [2] = vet[2] + "  "+"OOO        OOO";
+		        vet [3] = vet[3] + "  "+"OOOOOOOOOOOOOO";
+		        vet [4] = vet[4] + "  "+"OOO           ";
+		        vet [5] = vet[5] + "  "+"OOO           ";
+		        vet [6] = vet[6] + "  "+"OOO           ";
+                return 0;
+                }
+
+		public static int funcaoEspaco(String[] vet, boolean aparecerSoTamanho){
+			if(aparecerSoTamanho){
+                            return("              ").length();
+                        }
+                        for(int contador = 0; contador < vet.length; contador++) {
+				vet[contador] += "             ";
+			}  
+                 return 0;
+                }
+}
